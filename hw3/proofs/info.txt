@@ -1,0 +1,11 @@
+proofs:
+1) |-@a@b(a=b->b=a)
+2) @a@b(a=b->b=a)|-@a(a+0'=a')
+3) @a@b(a=b->b=a)|-@t(t'=t+0')
+*4) |-@t@s(t+s=s+t)
+*4) |-@t@s(t*s=s*t)
+*4) |-@t@r@s(t=r->t*s=r*s)
+*4) |-@t@r@s(t=r->t+s=r+s)
+*4) |-@x@y@z((x+(y+z))=((x+y)+z))
+5) @a@b(a*b')=(a*b+a),@t@s(t*s=s*t),@t@r@s(t=r->t+s=r+s),@a@b(a=b->b=a),@t@s(t+s=s+t),@s(a*a+s=s+a*a)->(a*a+a+a'=a+a'+a*a),@a@b(a+b'=(a+b)'),@t(t'=t+0'),x+y=y+x,@x@y((x+y)=(y+x))->@y((a+a'+y)=(y+a+a')),@a@b@c(a=b->a=c->b=c),@t@s(t+s=s+t)->@s(a+a+0'+s=s+a+a+0')|-a'*a'=a*a+a+a+0'
+6) @a@b(a=b->b=a),a'*a'=(a+0')*(a+0'),a'*a'=a*a+a+a+0'|-(a+0')*(a+0')=a*a+a+a+0'
