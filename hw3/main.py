@@ -14,11 +14,11 @@ formatN = '0'
 for i in range(count):
     formatN += "'"
 
-proof = fStr.replace('a', formatN)
+proof = fStr.replace('a', formatN) + '\n'
 f = open('input.txt', 'r')
 add = f.read()
 f.close()
-proof += add
+proof += add + '\n'
 proof += sStr[0]
 proof += sStr[1].replace('a', formatN)
 proof += '\n'
@@ -29,4 +29,3 @@ proof += '\n'
 f = open('output.txt', 'w')
 f.write(proof)
 f.close()
-
